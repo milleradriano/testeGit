@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<!– Importei as bibliotecas para utilizar a Realidade Aumentada –>
+<!â€“ Importei as bibliotecas para utilizar a Realidade Aumentada â€“>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
 
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
 
-<!– Arquivo css inline para ocultar o modo debug que vem na própria biblioteca –>
+<!â€“ Arquivo css inline para ocultar o modo debug que vem na prÃ³pria biblioteca â€“>
 
 <style type="text/css">
 
@@ -30,22 +30,19 @@ display: none; !important;
 
 <body>
 
-    <!– Insiro a tag <a-scene>, é responsável por criar o cenário, toda estrutura deve estar dentro dela –>
+    <!â€“ Insiro a tag <a-scene>, Ã© responsÃ¡vel por criar o cenÃ¡rio, toda estrutura deve estar dentro dela â€“>
 
     <a-scene>
 
-        <!– importo o arquivo pattern-marker.patt, responsável por comparar nossa imagem, tudo o que estiver na entidade câmera será exibido quando apontar a câmera para a imagem gerada –>
+        <!â€“ importo o arquivo pattern-marker.patt, responsÃ¡vel por comparar nossa imagem, tudo o que estiver na entidade cÃ¢mera serÃ¡ exibido quando apontar a cÃ¢mera para a imagem gerada â€“>
 
         <a-marker-camera preset="custom" type="pattern" url="big-m.patt">
 
-            <!– Insiro uma imagem que será mostrada, configurações: posição, rotação e tamanho da imagem –>
+            <!â€“ Insiro uma imagem que serÃ¡ mostrada, configuraÃ§Ãµes: posiÃ§Ã£o, rotaÃ§Ã£o e tamanho da imagem â€“>
 
             <a-image position="0 0.2 0? rotation="270 0 0? height="1? width="1? src="voador.png"></a-image>
 
-            <!– Insiro uma imagem que será mostrada, configurações: posição, rotação e tamanho da imagem –>
-
-            <a-image position="0 0.4 0? rotation="270 0 0? height="1? width="1? src="imagem2.png"></a-image>
-
+          
         </a-marker-camera>
 
             <a-entity camera></a-entity>
